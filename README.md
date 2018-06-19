@@ -64,15 +64,14 @@ Resources that we will be using that are not python specific are:
 
 To get started we will lanch the introduction notebook with binderhub.
 
-[![Binder](https://mybinder.org/badge.svg)](http://mybinder.org/v2/gh/costrouc/xu-machinelearning-notebooks/master?urlpath=lab/tree/notebooks/Overview.ipynb)
+[![Binder](https://mybinder.org/badge.svg)](http://mybinder.org/v2/gh/costrouc/mse-machinelearning-notebooks/master?urlpath=lab/tree/notebooks/Overview.ipynb)
 
 # Contributing
 
 All contributions, bug reports, bug fixes, documentation improvements,
 enhancements and ideas are welcome! These should be submitted at the
-[Gitlab
-repository](https://gitlab.com/costrouc/xu-machinelearning-notebooks). Github
-is only used for visibility.
+[Gitlab repository](https://gitlab.com/costrouc/
+mse-machinelearning-notebooks). Github is only used for visibility.
 
 Contributors:
  - [Chris Ostrouchov](https://gitlab.com/costrouc) (maintainer)
