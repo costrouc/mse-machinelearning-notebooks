@@ -1,0 +1,10 @@
+jupyterlab
+
+requests
+numpy
+scipy
+pandas
+matplotlib
+scikit-learn
+
+pymatgen

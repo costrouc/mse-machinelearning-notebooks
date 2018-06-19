@@ -44,6 +44,10 @@ learn. The packages that we will be using:
    learning library. Does not perform neural network
    calculations. Overview of available algorithms (does not cover all)
    [link](http://scikit-learn.org/stable/tutorial/machine_learning_map/index.html)
+   
+ - [pymatgen](https://github.com/materialsproject/pymatgen/) a package
+   by the Materials Project for working with material science
+   structures and analysis of calculations.
 
 These packages have many many features but learning these core
 libraries will be more than enough for getting started.
