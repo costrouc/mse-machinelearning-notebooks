@@ -1,3 +1,5 @@
+[![Binder](https://mybinder.org/badge.svg)](http://mybinder.org/v2/gh/costrouc/mse-machinelearning-notebooks/master?urlpath=lab/tree/notebooks/Overview.ipynb)
+
 # Machine Learning with a focus on Material Science
 
 A presentation given and written by Christopher Ostrouchov all
