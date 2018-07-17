@@ -1,0 +1,18 @@
+test_binder:
+  image: ubuntu:latest
+  services:
+    - docker:dind
+  variables:
+     DOCKER_HOST: tcp://docker:2375
+     DOCKER_DRIVER: overlay2
+  script:
+    # installing docker, python, and repo2docker
+    - apt update && apt install docker.io python3-pip -y
+    - pip3 install jupyter-repo2docker
+    # build binder image
+    - export CONTAINER_NAME="$CI_REGISTRY/$CI_PROJECT_PATH"
+    - export CONTAINER_TAG=$(echo "${CI_COMMIT_SHA}" | cut -c1-10)
+    - jupyter-repo2docker --debug --user-name username --user-id 1000 --no-run --image-name "${CONTAINER_NAME}:${CONTAINER_TAG}" "${CI_PROJECT_URL}"
+    # push docker image to gitlab registry
+    - docker login -u gitlab-ci-token -p $CI_BUILD_TOKEN $CI_REGISTRY
+    - docker push "${CONTAINER_NAME}:${CONTAINER_TAG}"
